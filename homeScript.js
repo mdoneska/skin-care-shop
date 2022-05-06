@@ -1,3 +1,12 @@
+$(document).ready(function() {
+  $('.autoplay').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+});
+
 let cardsContainer = document.getElementById("cards");
 let bestSellerItem = document.getElementById("bestSellerItem");
 let carouselBody = document.getElementById('carouselBody');
