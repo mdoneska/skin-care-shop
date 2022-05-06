@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://icons8.com/icon">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+    <!--Delot so best sellers-->
+    <!--Bootstrap CSS -->
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+<!--Bootstrap JS-->
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
     <link href="homeCss.css" rel="stylesheet">
 </head>
 
@@ -38,27 +46,36 @@
                     <li class="nav-item ">
                         <a class="nav-link" id="search" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/50/000000/external-search-essentials-icongeek26-outline-gradient-icongeek26.png" />
-                            
+                            <img
+                                src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/50/000000/external-search-essentials-icongeek26-outline-gradient-icongeek26.png" />
+
                         </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/64/000000/external-user-essentials-icongeek26-outline-gradient-icongeek26.png" />
+                            <img
+                                src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/64/000000/external-user-essentials-icongeek26-outline-gradient-icongeek26.png" />
                             <!-- <img
                                 src="https://img.icons8.com/external-inkubators-gradient-inkubators/25/000000/external-user-email-inkubators-gradient-inkubators.png" /> -->
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" id="logIn" href="#">Log In</a></li>
-                            <li><a class="dropdown-item" id="register" href="#">Sign Up</a></li>
+                            <li><a class="dropdown-item" id="logIn" href="#" onclick="openSignIn()" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" >Log In</a>
+                                
+
+
+
+                            </li>
+                            <li><a class="dropdown-item" id="register" href="#"onclick="openRegister()" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Sign Up</a></li>
                         </ul>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" id="cart" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <img
-                                src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/64/000000/external-shopping-bag-museum-icongeek26-outline-gradient-icongeek26.png"  />
+                                src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/64/000000/external-shopping-bag-museum-icongeek26-outline-gradient-icongeek26.png" />
                             <span id="itemCount" class="badge bg-secondary"></span>
                         </a>
                     </li>
@@ -67,9 +84,9 @@
             </div>
         </div>
     </nav>
-<!-- DropDown menu after navBar -->
+    <!-- DropDown menu after navBar -->
     <div class="btn-group" style="margin-left: 500px;margin-top:-70px;">
-        <button type="button" class="btn" >
+        <button type="button" class="btn">
             Home
         </button>
         <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -107,19 +124,19 @@
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="Logo/poster1.png" style="width:100%" style="display:block">
-            <div class="text">Caption Text</div>
+
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
             <img src="Logo/poster2.png" style="width:100%">
-            <div class="text">Caption Two</div>
+
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
             <img src="Logo/poster3.png" style="width:100%">
-            <div class="text">Caption Three</div>
+
         </div>
 
         <!-- Next and previous buttons -->
@@ -134,10 +151,100 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+    <!-- Brand Logo images -->
+    <div class="row " role="listbox">
+        <div class="column brandLogo">
+            <img src="BrandLogo/puritoLogo.jpg" alt="">
+        </div>
+        <div class="column brandLogo">
+            <img src="BrandLogo/pulpedevieLogo.png" alt="" width="180px">
+        </div>
+        <div class="column brandLogo">
+            <img src="BrandLogo/truealchemyLogo.png" alt="">
+        </div>
+        <div class="column brandLogo">
+            <img src="BrandLogo/novexpertLogo.png" alt="">
+        </div>
+        <div class="column brandLogo">
+            <img src="BrandLogo/drjartLogo.jpg" alt="" width="280px">
+        </div>
+
+    </div>
+    <!-- Best Sellers cards -->
+    <h3 class="heading-title" textalign="center">Best Sellers</h3>
+    <div class="container">
+        <div class="row">
+            <div id="cards" class="column"></div>
+        </div>
+    </div>
+
+
+    <!-- Best Sellers cards  vtor nacin-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="carousel slide multi-item-carousel" id="theCarousel">
+                <div class="carousel-inner">
+                    <div class="item active" id="bestSellerItem">
+                        
+                    </div>
+                    
+
+                    <!--  Example item end -->
+                </div>
+                <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
+                        class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
+                        class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<!--  Modal -->
+    <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" onclick="closeCart()" class="btn-close modalDismiss" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary modalDismiss" onclick="formSubmit()" data-bs-dismiss="modal">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src = "shared/shared.js"></script>
     <script src="homeScript.js"></script>
+    <script src = "logIn.js"></script>
+    <script src = "register.js"></script>
 </body>
+
 </html>
