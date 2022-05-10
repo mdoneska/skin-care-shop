@@ -1,11 +1,10 @@
-
-.logo{
+ .logo{
     height:200px;
     width: 200px;
-    /* width:auto; */
     float:left;
-    margin:0px auto;
-}
+   margin:0px auto;
+  
+} 
 .align-items {
     justify-content:flex-end;
     width: 100%;    

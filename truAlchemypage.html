@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://icons8.com/icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--Delot so best sellers-->
+    <!--Bootstrap CSS -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+    <!--Bootstrap JS-->
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+    <link href="homeCss.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid ">
+            
+            <a class="navbar-brand" href="#">
+                <img src="Logo/logo8.png" alt="SkinCare logo" class="ps-logo logo" width="150px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        oninput="searchByStr(this)" id="searchInput">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="search" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" title="Search">
+                            <img
+                                src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/50/000000/external-search-essentials-icongeek26-outline-gradient-icongeek26.png" />
+
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" title="Account">
+                            <img
+                                src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/64/000000/external-user-essentials-icongeek26-outline-gradient-icongeek26.png" />
+                            <!-- <img
+                                src="https://img.icons8.com/external-inkubators-gradient-inkubators/25/000000/external-user-email-inkubators-gradient-inkubators.png" /> -->
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" id="logIn" href="#" onclick="openSignIn()"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Log In</a>
+
+
+
+
+                            </li>
+                            <li><a class="dropdown-item" id="register" href="#" onclick="openRegister()"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal" >Sign Up</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" id="cart" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" title="Cart">
+                            <img
+                                src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/64/000000/external-shopping-bag-museum-icongeek26-outline-gradient-icongeek26.png" />
+                            <span id="itemCount" class="badge bg-secondary"></span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+<!-- DropDown menu after navBar -->
+<div class="btn-group" style="margin-left: 500px;margin-top:-70px;">
+    <button type="button" class="btn"> <a href="homepage.html">Home</a>
+        
+    </button>
+    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Brands
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="novexpertpage.html">Novexpert</a></li>
+        <li><a class="dropdown-item" href="pulpeDeViepage.html">Pulpe de Vie</a></li>
+        <li><a class="dropdown-item" href="truAlchemypage.html">Tru Alchemy</a></li>
+        <li><a class="dropdown-item" href="puritopage.html">Purito</a></li>
+        <li><a class="dropdown-item" href="Dr.Jart+page.html">Dr.Jart+</a></li>
+
+    </ul>
+    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Products
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+    <button type="button" class="btn">
+        Blog
+    </button>
+    <button type="button" class="btn">
+        Skin Care Routine
+    </button>
+</div>
+<!-- Novexpert cards -->
+    <h3 class="heading-title" textalign="center">True Alchemy</h3>
+    <div class="container">
+        <div class="row">
+            <div id="cards" class="column" id="novexpert"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="shared/shared.js"></script>
+ 
+    <script src="logIn.js"></script>
+    <script src="register.js"></script>
+    <script src="productsArray.js"></script>
+    <script src="truAlchemy.js"></script>
+
+
+
+</body>
+</html>
