@@ -5,6 +5,7 @@
    margin:0px auto;
   
 } 
+
 .align-items {
     justify-content:flex-end;
     width: 100%;    
@@ -27,7 +28,7 @@ width: 200px;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 1600px;
   position: relative;
   margin: auto;
 }
