@@ -1,46 +1,80 @@
 //Best Sellers
-// let bestSellers = [
-//     {
-//       img:"BestSellers/best6.png" ,
-//       description: "FIRST WRINKLES / THE “RIDES” KILLER",
-//       price: 885
-//     },
-//     {
-//       img:"BestSellers/best4.jpg",
-//       description: "Cream Emulsion Hyaluronic Acid 1% + Betaine 1% ",
-//       price: 1100
-//     },
-//     {
-//       img:"BestSellers/best5.jpg" ,
-//       description: "Cream Suspension Azelaic Acid 11.1%",
-//       price: 1000
-//     },
-//     {
-//       img:"BestSellers/best1.jpg" ,
-//       description: "Dr. Jart Cicapair Cream",
-//       price: 500
-//     },
-//     {
-//       img:"BestSellers/best2.jpg" ,
-//       description: "Dr.Jart+ Cicapair Sleepair Ampoule-In Mask",
-//       price: 299
-//     },
-//     {
-//       img:"BestSellers/best3.jpg" ,
-//       description: "PURITO From Green Cleansing Oil",
-//       price: 780
-//     },
-//     {
-//       img:"BestSellers/best7.jpg" ,
-//       description: "Magnesium mist / Soothing spray for sensitive skin",
-//       price: 299
-//     },
-//     {
-//       img:"BestSellers/best8.jpg" ,
-//       description: "Radiance Lifting Eye Contour",
-//       price: 780
-//     },
-//   ]
+let bestSellerProducts =[
+    {
+        id: 77,
+        category:"Colour Correcting",
+        range: "BB Cream",
+        img: "DrJart/1.jpg",
+        name: "CICAPAIR™ TIGER GRASS COLOUR CORRECTING TREATMENT",
+        description: "",
+        price: 80,
+        size: "50ml",
+
+    },
+    {
+        id: 10,
+        category:"Eye Care",
+        range: "Vitamin-C",
+        img: "Novexpert/10.png",
+        name: "Radiance Lifting Eye Contour",
+        description: "",
+        price: 36,
+        size: "15ml",
+    },
+    {
+        id: 96,
+        category:"Serum",
+        range: "Cantella Asiatica",
+        img: "DrJart/20.jpg",
+        name: "CICAPAIR™ TIGER GRASS RE.PAIR SERUM",
+        description: "",
+        price: 126,
+        size: "100ml",
+
+    },
+    {
+        id: 45,
+        category:"Face Care",
+        range: "Hydratation",
+        img: "PulpeDeVie/17.jpg",
+        name: "3-care routine MOISTURIZING",
+        description: "",
+        price: 29,
+        size: "400ml",
+    },
+    {
+        id: 54,
+        category:"Mask",
+        range: "Hyaluronic Acid, Vitamin-C, Niacinamide",
+        img: "TruAlchemy/2.jpg",
+        name: "MYSTIC MASK, Enzyme Treatment with Activated Vitamin C, Niacinamide + Hyaluronic",
+        description: "",
+        price: 56,
+        size: "40ml",
+    },
+    {
+        id: 73,
+        category:"Cleanser",
+        range: "Olive oil",
+        img: "Purito/13.jpg",
+        name: "Green Cleansing Oil",
+        description: "",
+        price: 21,
+        size: "200ml",
+    },
+
+
+    {
+        id: 75,
+        category:"Toner",
+        range: "Cantella Asiatica",
+        img: "Purito/15.jpg",
+        name: "DermaHA-3 Liquid",
+        description: "",
+        price: 22,
+        size: "200ml",
+    },
+]
 
 
 
@@ -338,7 +372,7 @@ let novexpertProducts = [
 //Range: Radiance and Energy, Detox, First Wrinkels, Anti-oxidant, Hygiene, [Im]perfection, Anti-ageing, Hair mask & Conditioner, Hydratation, Sensible Skins 
 let pulpeDeVieProducts = [
     {
-        id: 1,
+        id: 29,
         category:"Eye Care",
         range: "Radiance and Energy",
         img: "PulpeDeVie/1.jpg",
@@ -349,7 +383,7 @@ let pulpeDeVieProducts = [
 
     },
     {
-        id: 2,
+        id: 30,
         category:"Face Care",
         range: "[Im]perfection",
         img: "PulpeDeVie/2.jpg",
@@ -359,7 +393,7 @@ let pulpeDeVieProducts = [
         size: "40ml",
     },
     {
-        id: 3,
+        id: 31,
         category:"Body & Hair",
         range: "Hygiene",
         img: "PulpeDeVie/3.jpg",
@@ -370,7 +404,7 @@ let pulpeDeVieProducts = [
 
     },
     {
-        id: 4,
+        id: 32,
         category:"Body & Hair",
         range: "Hygiene",
         img: "PulpeDeVie/4.jpg",
@@ -380,7 +414,7 @@ let pulpeDeVieProducts = [
         size: "150ml",
     },
     {
-        id: 5,
+        id: 33,
         category:"Face Care",
         range: "First Wrinkels",
         img: "PulpeDeVie/5.jpg",
@@ -391,7 +425,7 @@ let pulpeDeVieProducts = [
 
     },
     {
-        id: 6,
+        id: 34,
         category:"Face Care",
         range: "Radiance and Energy",
         img: "PulpeDeVie/6.jpg",
@@ -401,7 +435,7 @@ let pulpeDeVieProducts = [
         size: "30ml",
     },
     {
-        id: 7,
+        id: 35,
         category:"Face Care",
         range: "[Im]perfection",
         img: "PulpeDeVie/7.jpg",
@@ -411,7 +445,7 @@ let pulpeDeVieProducts = [
         size: "30ml",
     },
     {
-        id: 8,
+        id: 36,
         category:"Face Care",
         range: "Radiance and Energy",
         img: "PulpeDeVie/8.jpg",
@@ -421,7 +455,7 @@ let pulpeDeVieProducts = [
         size: "40ml",
     },
     {
-        id: 9,
+        id: 37,
         category:"Face Care",
         range: "[Im]perfection",
         img: "PulpeDeVie/9.jpg",
@@ -431,7 +465,7 @@ let pulpeDeVieProducts = [
         size: "200ml",
     },
     {
-        id: 10,
+        id: 38,
         category:"Face Care",
         range: "[Im]perfection",
         img: "PulpeDeVie/10.jpg",
@@ -441,7 +475,7 @@ let pulpeDeVieProducts = [
         size: "125ml",
     },
     {
-        id: 11,
+        id: 39,
         category:"Face Care",
         range: "Detox",
         img: "PulpeDeVie/11.jpg",
@@ -451,7 +485,7 @@ let pulpeDeVieProducts = [
         size: "400ml",
     },
     {
-        id: 12,
+        id: 40,
         category:"Face Care",
         range: "First Wrinkels",
         img: "PulpeDeVie/12.jpg",
@@ -461,7 +495,7 @@ let pulpeDeVieProducts = [
         size: "30ml",
     },
     {
-        id: 13,
+        id: 41,
         category:"Face masks and scrubs",
         range: "Anti-ageing",
         img: "PulpeDeVie/13.jpg",
@@ -471,7 +505,7 @@ let pulpeDeVieProducts = [
         size: "1 application",
     },
     {
-        id: 14,
+        id: 42,
         category:"Body & Hair",
         range: "Hygiene",
         img: "PulpeDeVie/14.jpg",
@@ -481,7 +515,7 @@ let pulpeDeVieProducts = [
         size: "200ml",
     },
     {
-        id: 15,
+        id: 43,
         category:"Body & Hair",
         range: "Hair mask & Conditioner",
         img: "PulpeDeVie/15.jpg",
@@ -491,7 +525,7 @@ let pulpeDeVieProducts = [
         size: "150ml",
     },
     {
-        id: 16,
+        id: 44,
         category:"Face Care",
         range: "Hydratation",
         img: "PulpeDeVie/16.jpg",
@@ -501,7 +535,7 @@ let pulpeDeVieProducts = [
         size: "50ml",
     },
     {
-        id: 17,
+        id: 45,
         category:"Face Care",
         range: "Hydratation",
         img: "PulpeDeVie/17.jpg",
@@ -511,7 +545,7 @@ let pulpeDeVieProducts = [
         size: "400ml",
     },
     {
-        id: 18,
+        id: 46,
         category:"Face Care",
         range: "Hydratation",
         img: "PulpeDeVie/18.jpg",
@@ -521,7 +555,7 @@ let pulpeDeVieProducts = [
         size: "40ml",
     },
     {
-        id: 19,
+        id: 47,
         category:"Face Care",
         range: "Radiance and Energy",
         img: "PulpeDeVie/19.jpg",
@@ -531,7 +565,7 @@ let pulpeDeVieProducts = [
         size: "125ml",
     },
     {
-        id: 20,
+        id: 48,
         category:"Body & Hair",
         range: "Hygiene",
         img: "PulpeDeVie/20.jpg",
@@ -541,7 +575,7 @@ let pulpeDeVieProducts = [
         size: "200ml",
     },
     {
-        id: 21,
+        id: 48,
         category:"Face Care",
         range: "Radiance and Energy",
         img: "PulpeDeVie/21.jpg",
@@ -551,7 +585,7 @@ let pulpeDeVieProducts = [
         size: "400ml",
     },
     {
-        id: 22,
+        id: 50,
         category:"Face Care",
         range: "Hydratation",
         img: "PulpeDeVie/22.jpg",
@@ -561,7 +595,7 @@ let pulpeDeVieProducts = [
         size: "30ml",
     },
     {
-        id: 23,
+        id: 51,
         category:"Face Care",
         range: "Sensible Skins ",
         img: "PulpeDeVie/23.jpg",
@@ -571,7 +605,7 @@ let pulpeDeVieProducts = [
         size: "400ml",
     },
     {
-        id: 24,
+        id: 52,
         category:"Face Care",
         range: "Sensible Skins ",
         img: "PulpeDeVie/24.jpg",
@@ -592,7 +626,7 @@ let pulpeDeVieProducts = [
 //Range:   Niacinamide, Cantella Asiatica, Panthenol
 let truAlchemyProducts = [
     {
-        id: 1,
+        id: 53,
         category:"Cream",
         range: "Hyaluronic Acid",
         img: "TruAlchemy/1.jpg",
@@ -603,7 +637,7 @@ let truAlchemyProducts = [
 
     },
     {
-        id: 2,
+        id: 54,
         category:"Mask",
         range: "Hyaluronic Acid, Vitamin-C, Niacinamide",
         img: "TruAlchemy/2.jpg",
@@ -613,7 +647,7 @@ let truAlchemyProducts = [
         size: "40ml",
     },
     {
-        id: 3,
+        id: 55,
         category:"Serum",
         range: "Vitamin-C",
         img: "TruAlchemy/3.jpg",
@@ -624,7 +658,7 @@ let truAlchemyProducts = [
 
     },
     {
-        id: 4,
+        id: 56,
         category:"Eye Care",
         range: "Hyaluronic Acid",
         img: "TruAlchemy/4.jpg",
@@ -634,7 +668,7 @@ let truAlchemyProducts = [
         size: "40ml",
     },
     {
-        id: 5,
+        id: 57,
         category:"Serum",
         range: " Niacinamide",
         img: "TruAlchemy/5.jpg",
@@ -645,7 +679,7 @@ let truAlchemyProducts = [
 
     },
     {
-        id: 6,
+        id: 58,
         category:"Sets",
         range: " Vitamin-C, Niacinamide",
         img: "TruAlchemy/6.jpg",
@@ -655,7 +689,7 @@ let truAlchemyProducts = [
         size: "150ml",
     },
     {
-        id: 7,
+        id: 59,
         category:"Sets",
         range: "Hyaluronic Acid",
         img: "TruAlchemy/7.jpg",
@@ -666,7 +700,7 @@ let truAlchemyProducts = [
 
     },
     {
-        id: 8,
+        id: 60,
         category:"Serum",
         range: "Collagen",
         img: "TruAlchemy/8.jpg",
@@ -684,7 +718,7 @@ let truAlchemyProducts = [
 //Range:  Vitamin-C,  Niacinamide, Panthenol, Sea Buckthorn, Olive oil, Cantella Asiatica
 let puritoProducts=[
     {
-        id: 1,
+        id: 61,
         category:"Toner",
         range: "Panthenol",
         img: "Purito/1.jpg",
@@ -695,7 +729,7 @@ let puritoProducts=[
 
     },
     {
-        id: 2,
+        id: 62,
         category:"Eye Care",
         range: "Panthenol",
         img: "Purito/2.jpg",
@@ -705,7 +739,7 @@ let puritoProducts=[
         size: "30ml",
     },
     {
-        id: 3,
+        id: 63,
         category:"Cream",
         range: "Niacinamide",
         img: "Purito/3.jpg",
@@ -716,7 +750,7 @@ let puritoProducts=[
 
     },
     {
-        id: 4,
+        id: 64,
         category:"Serum",
         range: "Niacinamide",
         img: "Purito/4.jpg",
@@ -726,7 +760,7 @@ let puritoProducts=[
         size: "60ml",
     },
     {
-        id: 5,
+        id: 65,
         category:"Eye Care",
         range: "Cantella Asiatica",
         img: "Purito/5.jpg",
@@ -737,7 +771,7 @@ let puritoProducts=[
 
     },
     {
-        id: 6,
+        id: 66,
         category:"Sets",
         range: "Cantella Asiatica",
         img: "Purito/6.png",
@@ -747,7 +781,7 @@ let puritoProducts=[
         size: "Toner(30ml), Serum(15ml), Cream(12ml)",
     },
     {
-        id: 7,
+        id: 67,
         category:"Cream",
         range: "Cantella Asiatica",
         img: "Purito/7.jpg",
@@ -758,7 +792,7 @@ let puritoProducts=[
 
     },
     {
-        id: 8,
+        id: 68,
         category:"Serum",
         range: "Cantella Asiatica",
         img: "Purito/8.jpg",
@@ -768,7 +802,7 @@ let puritoProducts=[
         size: "60ml",
     },
     {
-        id:9,
+        id: 69,
         category:"Toner",
         range: "Cantella Asiatica",
         img: "Purito/9.jpg",
@@ -779,7 +813,7 @@ let puritoProducts=[
 
     },
     {
-        id: 10,
+        id: 70,
         category:"Cream",
         range: "Niacinamide",
         img: "Purito/10.jpg",
@@ -789,18 +823,18 @@ let puritoProducts=[
         size: "50gr",
     },
     {
-        id: 11,
+        id: 71,
         category:"Cream",
         range: "Niacinamide, Sea Buckthorn",
         img: "Purito/11.jpg",
         name: "Sea Buckthorn Vital 70 Cream",
         description: "",
-        price:199,
+        price: 19,
         size: "50ml",
 
     },
     {
-        id: 12,
+        id: 72,
         category:"Cream",
         range: "Cantella Asiatica",
         img: "Purito/12.jpg",
@@ -810,7 +844,7 @@ let puritoProducts=[
         size: "80ml",
     },
     {
-        id: 13,
+        id: 73,
         category:"Cleanser",
         range: "Olive oil",
         img: "Purito/13.jpg",
@@ -821,7 +855,7 @@ let puritoProducts=[
     },
 
     {
-        id: 14,
+        id: 74,
         category:"Cleanser",
         range: "Cantella Asiatica",
         img: "Purito/14.jpg",
@@ -832,7 +866,7 @@ let puritoProducts=[
     },
 
     {
-        id: 15,
+        id: 75,
         category:"Toner",
         range: "Cantella Asiatica",
         img: "Purito/15.jpg",
@@ -843,7 +877,7 @@ let puritoProducts=[
     },
 
     {
-        id: 16,
+        id: 76,
         category:"Serum",
         range: "Vitamin-C",
         img: "Purito/16.png",
@@ -862,7 +896,7 @@ let puritoProducts=[
 //Range: BB Cream, Ceramide complex, Hyaluronic Acid, Cantella Asiatica, Niacinamide, 
 let drJartProducts=[
     {
-        id: 1,
+        id: 77,
         category:"Colour Correcting",
         range: "BB Cream",
         img: "DrJart/1.jpg",
@@ -873,7 +907,7 @@ let drJartProducts=[
 
     },
     {
-        id: 2,
+        id: 78,
         category:"Cream",
         range: "Ceramide complex",
         img: "DrJart/2.jpg",
@@ -884,7 +918,7 @@ let drJartProducts=[
 
     },
     {
-        id: 3,
+        id: 79,
         category:"Cream",
         range: "Hyaluronic Acid",
         img: "DrJart/3.jpg",
@@ -895,7 +929,7 @@ let drJartProducts=[
 
     },
     {
-        id: 4,
+        id: 80,
         category:"Cream",
         range: "Cantella Asiatica",
         img: "DrJart/4.jpg",
@@ -906,7 +940,7 @@ let drJartProducts=[
 
     },
     {
-        id: 5,
+        id: 81,
         category:"Cream",
         range: "Niacinamide",
         img: "DrJart/5.jpg",
@@ -917,7 +951,7 @@ let drJartProducts=[
 
     },
     {
-        id: 6,
+        id: 82,
         category:"Serum",
         range: "Ceramide complex",
         img: "DrJart/6.jpg",
@@ -928,7 +962,7 @@ let drJartProducts=[
 
     },
     {
-        id: 7,
+        id: 83,
         category:"Sets",
         range: "Ceramide complex",
         img: "DrJart/7.jpg",
@@ -939,7 +973,7 @@ let drJartProducts=[
 
     },
     {
-        id: 8,
+        id: 84,
         category:"Cream",
         range: "Cantella Asiatica",
         img: "DrJart/8.jpg",
@@ -950,7 +984,7 @@ let drJartProducts=[
 
     },
     {
-        id: 9,
+        id: 85,
         category:"Sets",
         range: "Cantella Asiatica",
         img: "DrJart/9.jpg",
@@ -961,7 +995,7 @@ let drJartProducts=[
 
     },
     {
-        id: 10,
+        id: 86,
         category:"Sets",
         range: "Hyaluronic Acid",
         img: "DrJart/10.jpg",
@@ -972,7 +1006,7 @@ let drJartProducts=[
 
     },
     {
-        id: 11,
+        id: 87,
         category:"Cream",
         range: "Ceramide complex",
         img: "DrJart/11.jpg",
@@ -983,7 +1017,7 @@ let drJartProducts=[
 
     },
     {
-        id: 12,
+        id: 88,
         category:"Toner",
         range: "Ceramide complex",
         img: "DrJart/12.jpg",
@@ -994,7 +1028,7 @@ let drJartProducts=[
 
     },
     {
-        id: 13,
+        id: 89,
         category:"Mask",
         range: "Hyaluronic Acid",
         img: "DrJart/13.jpg",
@@ -1005,7 +1039,7 @@ let drJartProducts=[
 
     },
     {
-        id: 14,
+        id: 90,
         category:"Mask",
         range: "Ceramide complex",
         img: "DrJart/14.jpg",
@@ -1016,7 +1050,7 @@ let drJartProducts=[
 
     },
     {
-        id: 15,
+        id: 91,
         category:"Eye Care",
         range: "Ceramide complex",
         img: "DrJart/15.jpg",
@@ -1027,7 +1061,7 @@ let drJartProducts=[
 
     },
     {
-        id: 16,
+        id: 92,
         category:"Mask",
         range: "Hyaluronic Acid",
         img: "DrJart/16.jpg",
@@ -1038,7 +1072,7 @@ let drJartProducts=[
 
     },
     {
-        id: 17,
+        id: 93,
         category:"Toner",
         range: "Niacinamide",
         img: "DrJart/17.jpg",
@@ -1049,7 +1083,7 @@ let drJartProducts=[
 
     },
     {
-        id: 18,
+        id: 94,
         category:"Cleanser",
         range: "Niacinamide",
         img: "DrJart/18.jpg",
@@ -1060,7 +1094,7 @@ let drJartProducts=[
 
     },
     {
-        id: 19,
+        id: 95,
         category:"Toner",
         range: "Niacinamide",
         img: "DrJart/19.jpg",
@@ -1071,7 +1105,7 @@ let drJartProducts=[
 
     },
     {
-        id: 20,
+        id: 96,
         category:"Serum",
         range: "Cantella Asiatica",
         img: "DrJart/20.jpg",
@@ -1082,7 +1116,7 @@ let drJartProducts=[
 
     },
     {
-        id: 21,
+        id: 97,
         category:"Mist",
         range: "Cantella Asiatica",
         img: "DrJart/21.jpg",
@@ -1093,7 +1127,7 @@ let drJartProducts=[
 
     },
     {
-        id: 22,
+        id: 98,
         category:"Cleanser",
         range: "Cantella Asiatica",
         img: "DrJart/22.jpg",
@@ -1104,7 +1138,7 @@ let drJartProducts=[
 
     },
     {
-        id: 23,
+        id: 99,
         category:"Toner",
         range: "Hyaluronic Acid",
         img: "DrJart/23.jpg",
@@ -1115,7 +1149,7 @@ let drJartProducts=[
 
     },
     {
-        id: 24,
+        id: 100,
         category:"Eye Care",
         range: "Hyaluronic Acid",
         img: "DrJart/24.jpg",
@@ -1126,7 +1160,7 @@ let drJartProducts=[
 
     },
     {
-        id: 25,
+        id: 101,
         category:"Mask",
         range: "Cantella Asiatica",
         img: "DrJart/25.jpg",
@@ -1137,7 +1171,7 @@ let drJartProducts=[
 
     },
     {
-        id: 26,
+        id: 102,
         category:"Sets",
         range: "Cantella Asiatica",
         img: "DrJart/26.jpg",
