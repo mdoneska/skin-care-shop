@@ -1,46 +1,48 @@
 //Best Sellers
-let bestSellers = [
-    {
-      img:"BestSellers/best6.png" ,
-      description: "FIRST WRINKLES / THE “RIDES” KILLER",
-      price: 885
-    },
-    {
-      img:"BestSellers/best4.jpg",
-      description: "Cream Emulsion Hyaluronic Acid 1% + Betaine 1% ",
-      price: 1100
-    },
-    {
-      img:"BestSellers/best5.jpg" ,
-      description: "Cream Suspension Azelaic Acid 11.1%",
-      price: 1000
-    },
-    {
-      img:"BestSellers/best1.jpg" ,
-      description: "Dr. Jart Cicapair Cream",
-      price: 500
-    },
-    {
-      img:"BestSellers/best2.jpg" ,
-      description: "Dr.Jart+ Cicapair Sleepair Ampoule-In Mask",
-      price: 299
-    },
-    {
-      img:"BestSellers/best3.jpg" ,
-      description: "PURITO From Green Cleansing Oil",
-      price: 780
-    },
-    {
-      img:"BestSellers/best7.jpg" ,
-      description: "Magnesium mist / Soothing spray for sensitive skin",
-      price: 299
-    },
-    {
-      img:"BestSellers/best8.jpg" ,
-      description: "Radiance Lifting Eye Contour",
-      price: 780
-    },
-  ]
+// let bestSellers = [
+//     {
+//       img:"BestSellers/best6.png" ,
+//       description: "FIRST WRINKLES / THE “RIDES” KILLER",
+//       price: 885
+//     },
+//     {
+//       img:"BestSellers/best4.jpg",
+//       description: "Cream Emulsion Hyaluronic Acid 1% + Betaine 1% ",
+//       price: 1100
+//     },
+//     {
+//       img:"BestSellers/best5.jpg" ,
+//       description: "Cream Suspension Azelaic Acid 11.1%",
+//       price: 1000
+//     },
+//     {
+//       img:"BestSellers/best1.jpg" ,
+//       description: "Dr. Jart Cicapair Cream",
+//       price: 500
+//     },
+//     {
+//       img:"BestSellers/best2.jpg" ,
+//       description: "Dr.Jart+ Cicapair Sleepair Ampoule-In Mask",
+//       price: 299
+//     },
+//     {
+//       img:"BestSellers/best3.jpg" ,
+//       description: "PURITO From Green Cleansing Oil",
+//       price: 780
+//     },
+//     {
+//       img:"BestSellers/best7.jpg" ,
+//       description: "Magnesium mist / Soothing spray for sensitive skin",
+//       price: 299
+//     },
+//     {
+//       img:"BestSellers/best8.jpg" ,
+//       description: "Radiance Lifting Eye Contour",
+//       price: 780
+//     },
+//   ]
+
+
 
 //Novexpert
 //Category: Cream, Serum, Mask, Eye Care, Mist, Scrub, Purifying Fluid, Cleanser,  Oil,  Fluid, Lotion
