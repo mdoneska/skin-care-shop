@@ -52,28 +52,8 @@ let bestSellerProducts =[
         price: 56,
         size: "40ml",
     },
-    {
-        id: 73,
-        category:"Cleanser",
-        range: "Olive oil",
-        img: "Purito/13.jpg",
-        name: "Green Cleansing Oil",
-        description: "",
-        price: 21,
-        size: "200ml",
-    },
-
-
-    {
-        id: 75,
-        category:"Toner",
-        range: "Cantella Asiatica",
-        img: "Purito/15.jpg",
-        name: "DermaHA-3 Liquid",
-        description: "",
-        price: 22,
-        size: "200ml",
-    },
+   
+    
 ]
 
 
