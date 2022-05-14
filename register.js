@@ -47,7 +47,7 @@
 
 
         // let btn = document.getElementById("submit")
-        let url = "http://www.sedc.somee.com/api/users"
+       
         submitBtn.addEventListener("click", function () {
 
             let firstName = document.getElementById("firstName");
