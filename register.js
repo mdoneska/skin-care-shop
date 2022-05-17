@@ -1,9 +1,14 @@
 
 
 {
+  
+
     let submitBtn = document.getElementById("submit");
+    //let submitBtn = document.getElementById("submit");
     function openRegister() {
         let form = htmlToElement(`
+
+
         <form class="form" id = "form">
         <div class="form-group">
           <label for="firstName">First Name</label>
@@ -37,7 +42,8 @@
         </div>
 
        
-      </form>`
+      </form>
+      `
         )
         modalBody.innerHTML = '';
         modalBody.append(form);

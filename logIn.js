@@ -8,79 +8,81 @@ let createdDiv = document.getElementById("firstChild");
 function openSignIn() {
     let form = htmlToElement(
         `
-        <form class="form" id="myForm">   
-        <div id="error"> </div> 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input class="form-control" id="email" name="email" required placeholder="Email" minlength="5" maxlength="25"  />
-          <div class="error"></div>
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" required name="password" placeholder="Password" minlength="5" maxlength="20"  />
-          <div class="error"></div>
-        </div> 
-      </form>`
+         <form class="form" id="myForm">   
+         <div id="error"> </div> 
+         <div class="form-group">
+           <label for="email">Email</label>
+           <input class="form-control" id="email" name="email" required placeholder="Email" minlength="5" maxlength="25"  />
+           <div class="error"></div>
+         </div>
+         <div class="form-group">
+           <label for="password">Password</label>
+           <input type="password" class="form-control" id="password" required name="password" placeholder="Password" minlength="5" maxlength="20"  />
+           <div class="error"></div>
+         </div> 
+     </form>
+      `
     )
+   
     modalBody.innerHTML = '';
     modalBody.append(form);
 
     // appendFooter("Sign In");
 
+    
+
+    document.getElementById("submit").addEventListener("click", function () {
+
+        let email = document.getElementById("email");
+        let pass = document.getElementById("password");
+
+        let user = {
+            email: email.value,
+            password: pass.value
+        }
+
+        if (user.email != "" && user.password != "") {
+
+            axios
+                .get(
+                    `http://www.sedc.somee.com/api/users/${user.email}/${user.password}`
+                )
+                .then(function (response) {
+
+                    console.log(response);
+
+                    if (response.data) {
+
+                        loggedUser.name = response.data.firstName;
+                        loggedUser.lastName = response.data.lastName;
+                        loggedUser.email = response.data.email;
+                        loggedUser.userId = response.data.id;
 
 
-    // document.getElementById("submit").addEventListener("click", function () {
+                        localStorage.setItem("loggedUser", JSON.stringify(loggedUser));
 
-    //     let email = document.getElementById("email");
-    //     let pass = document.getElementById("password");
+                        setTimeout(clickButton, 500);
 
-    //     let user = {
-    //         email: email.value,
-    //         password: pass.value
-    //     }
+                        writeLoggedUser(loggedUser);
 
-    //     if (user.email != "" && user.password != "") {
+                        signOut();
 
-    //         axios
-    //             .get(
-    //                 `http://www.sedc.somee.com/api/users/${user.email}/${user.password}`
-    //             )
-    //             .then(function (response) {
-
-    //                 console.log(response);
-
-    //                 if (response.data) {
-
-    //                     loggedUser.name = response.data.firstName;
-    //                     loggedUser.lastName = response.data.lastName;
-    //                     loggedUser.email = response.data.email;
-    //                     loggedUser.userId = response.data.id;
+                    }
+                    else {
+                        let err = document.getElementById("error");
+                        err.innerText = "Your email and password doesn't match";
+                        err.style = "color: red";
+                    }
+                });
 
 
-    //                     localStorage.setItem("loggedUser", JSON.stringify(loggedUser));
-
-    //                     setTimeout(clickButton, 500);
-
-    //                     writeLoggedUser(loggedUser);
-
-    //                     signOut();
-
-    //                 }
-    //                 else {
-    //                     let err = document.getElementById("error");
-    //                     err.innerText = "Your email and password doesn't match";
-    //                     err.style = "color: red";
-    //                 }
-    //             });
+        }
+        else {
+            labelText("Please fill the required fields", "red");
+        }
 
 
-    //     }
-    //     else {
-    //         labelText("Please fill the required fields", "red");
-    //     }
-
-
-    // })
+    })
 }
 
 function clickButton() {
