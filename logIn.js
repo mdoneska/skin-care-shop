@@ -9,24 +9,24 @@ function openSignIn() {
         `
        
 
-        <form class="form" id="myForm">
+        <form class="form">
        <h3>Welcome back </h3>
       
-        <div class="container">
+        <div class="container myForm">
                 <label for="email"><b>Email</b></label>
                 <input type="text" id="email" placeholder="Enter email" name="email" required>
          </div>
 
-        <div class="container">
+        <div class="container myForm">
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
          </div>
-          <div class="container">
+          <div class="container myForm">
                  <button id="btn" type="submit" onclick="formSubmit()">Login</button>
                   
          </div>
       
-        <div class="container" >
+        <div class="container myForm" >
           <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
       </form>

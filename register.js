@@ -7,25 +7,25 @@
   //let submitBtn = document.getElementById("submit");
   function openRegister() {
     let form = htmlToElement(`
-        <form class="form" id="myForm">
+        <form class="form" >
         <h3>Need an account? Sign up now!</h3>
        
-         <div class="container">
+         <div class="container myForm">
                  <label for="email"><b>Email</b></label>
                  <input type="text" id="email" placeholder="Enter email" name="email" required>
           </div>
  
-         <div class="container">
+         <div class="container myForm">
                  <label for="password"><b>Password</b></label>
                  <input type="password" id="password" placeholder="Enter Password" name="password" minlength="8" maxlength="20" required>
           </div>
 
-          <div class="container">
+          <div class="container myForm">
                 <label for="confirmPassword">Confirm password</label>
                 <input type="password" name="confirmPassword" placeholder="Confirm Password" id="confirmPassword" minlength="8" maxlength="20" required "> 
           </div>
 
-          <div class="container">
+          <div class="container myForm">
             <span class="label">Gender</span>
             <input type="radio" name="gender" id="male" value="male" checked>
             <label for="male">Male</label>
@@ -33,7 +33,7 @@
             <label for="female">Female</label>
         </div>
 
-        <div class="container">
+        <div class="container myForm">
         <label for="country">Country</label>
         <select name="country" id="country" required  onblur="validateInput(this)">
             <option value="">Select country</option>
@@ -44,7 +44,7 @@
         
     </div>
 
-           <div class="container">
+           <div class="container myForm">
                   <button id="btn" type="submit" onclick="formSubmit()">Sign up</button> 
           </div>
        
