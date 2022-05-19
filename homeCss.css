@@ -145,3 +145,56 @@ width: 200px;
   text-transform: uppercase;
 
 }
+
+
+/*log in
+/* Full-width inputs */
+h3{
+  text-align: center;
+}
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 20px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 10px;
+  width: 80%;
+ margin: auto 200px ;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: left;
+  padding-top: 16px;
+  width: 50%;
+  text-align: center;
+ 
+}
+
+/*sign up
+
+
+

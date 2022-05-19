@@ -1,5 +1,5 @@
 let modalBody = document.getElementsByClassName("modal-body")[0];
-
+let login = document.getElementById("logModal")
 function htmlToElement(html) {
     var template = document.createElement("template");
     html = html.trim(); // Trim za da izbrishime whitespace

@@ -2,34 +2,61 @@ let loggedUser = JSON.parse(localStorage.getItem("loggedUser")) == undefined // 
     ? {} // ako ne postoi togash davame vrednost prazna niza
     : JSON.parse(localStorage.getItem("loggedUser"));
 
-
 let createdDiv = document.getElementById("firstChild");
-
+//let modalFooter = document.getElementsByClassName("modal-footer")[0];
 function openSignIn() {
     let form = htmlToElement(
         `
-         <form class="form" id="myForm">   
-         <div id="error"> </div> 
-         <div class="form-group">
-           <label for="email">Email</label>
-           <input class="form-control" id="email" name="email" required placeholder="Email" minlength="5" maxlength="25"  />
-           <div class="error"></div>
+       
+
+        <form class="form" id="myForm">
+       <h3>Welcome back </h3>
+      
+        <div class="container">
+                <label for="email"><b>Email</b></label>
+                <input type="text" id="email" placeholder="Enter email" name="email" required>
          </div>
-         <div class="form-group">
-           <label for="password">Password</label>
-           <input type="password" class="form-control" id="password" required name="password" placeholder="Password" minlength="5" maxlength="20"  />
-           <div class="error"></div>
-         </div> 
-     </form>
+
+        <div class="container">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+         </div>
+          <div class="container">
+                 <button id="btn" type="submit" onclick="formSubmit()">Login</button>
+                  
+         </div>
+      
+        <div class="container" >
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+  </form>
+
+ 
+
+    //      <form class="form" id="myForm">   
+    //      <div id="error"> </div> 
+    //      <div class="form-group">
+    //        <label for="email">Email</label>
+    //        <input class="form-control" id="email" name="email" required placeholder="Email" minlength="5" maxlength="25"  />
+    //        <div class="error"></div>
+    //      </div>
+    //      <div class="form-group">
+    //        <label for="password">Password</label>
+    //        <input type="password" class="form-control" id="password" required name="password" placeholder="Password" minlength="5" maxlength="20"  />
+    //        <div class="error"></div>
+    //      </div> 
+    //  </form>
+     
       `
     )
-   
-    modalBody.innerHTML = '';
+ 
+   modalBody.innerHTML = '';
     modalBody.append(form);
 
-    // appendFooter("Sign In");
+    //appendFooter("Sign In");
 
-    
+
 
     document.getElementById("submit").addEventListener("click", function () {
 
